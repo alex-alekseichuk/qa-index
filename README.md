@@ -10,7 +10,7 @@ python -m spacy download ru_core_news_lg
 
 Run dev. server locally:
 ```
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 Open Swagger web UI: `http://localhost:8000/docs`

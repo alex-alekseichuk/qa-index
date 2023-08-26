@@ -5,7 +5,7 @@ import spacy
 import pandas as pd
 
 nlp = spacy.load("ru_core_news_lg")
-df = pd.read_csv('source_table.csv')
+df = pd.read_csv('./data/source_table.csv')
 
 # print(df['№ услуги'][0])
 print(df.info())
@@ -31,4 +31,4 @@ for service_name in service_names:
         continue
     services.loc[len(services)] = [service_row.iloc[0,0], service_row.iloc[0,1], service_row.iloc[0,2]]
 
-services.to_csv('services.csv', index=False)
+services.to_csv('./data/services.csv', index=False)

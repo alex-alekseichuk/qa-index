@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from model import get_answers
+from .model import get_answers
 
 app = FastAPI()
 

@@ -1,4 +1,4 @@
-from model import get_answers
+from .model import get_answers
 
 question = "Какие документы предоставить при обращении представителя по детской карте?"
 print(question)

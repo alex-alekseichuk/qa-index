@@ -4,7 +4,7 @@ from annoy import AnnoyIndex
 
 nlp = spacy.load("ru_core_news_lg")
 
-dfData = pd.read_csv('source_table.csv')
+dfData = pd.read_csv('./data/source_table.csv')
 
 fN = "№ услуги"
 fName = "Полное наименование услуги"
