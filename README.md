@@ -1,6 +1,9 @@
 # QA index
 
-Install dependency:
+This is NPM model with HTTP interface for AI search against FAQ knowledge base.
+It needs to use some linux box with `pyenv` and `pipenv` python tools already installed.
+
+Install dependency locally:
 
 ```
 pipenv install
@@ -13,6 +16,12 @@ Run dev. server locally:
 uvicorn app.main:app --reload
 ```
 
+Build docker image and run locally:
+```
+docker build -t qa-index-server .
+docker run -ti --rm --name qa-index-server -p8000:8000 qa-index-server
+```
+
 Open Swagger web UI: `http://localhost:8000/docs`
 
 
@@ -21,9 +30,3 @@ Used libs:
 - spacy NLP
 - annoy ANN
 - FastAPI HTTP server
-
-
-Shared notebook:
-
-https://deepnote.com/workspace/sudo-df68-db5e6b1b-f096-429d-ac8f-752981730ddc
-
