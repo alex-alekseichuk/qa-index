@@ -1,6 +1,6 @@
 # QA index
 
-This is NPM model with HTTP interface for AI search against FAQ knowledge base.
+This is NLP model with HTTP interface for AI search against FAQ knowledge base.
 It needs to use some linux box with `pyenv` and `pipenv` python tools already installed.
 
 Install dependency locally:
