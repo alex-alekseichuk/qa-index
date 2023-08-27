@@ -18,3 +18,14 @@ def answer_by_index(index):
     return dfData.loc[index, fAnswer]
 
 
+def record_by_index(index):
+    return dict(dfData.loc[index, :])
+
+
+dfServices = pd.read_csv('./data/services.csv')
+
+dictServices = dict()
+
+for i, record in enumerate(dfServices.to_dict(orient='records')):
+    record['i'] = i
+    dictServices[record['n']] = record

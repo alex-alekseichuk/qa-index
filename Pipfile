@@ -9,6 +9,7 @@ pandas = "*"
 annoy = "*"
 fastapi = "*"
 uvicorn = {extras = ["standard"], version = "*"}
+scikit-learn = "*"
 
 [dev-packages]
 
